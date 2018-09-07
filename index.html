@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>忻州师范学院2018级新生预报到</title>
+  <link rel="stylesheet" href="./css/layui.css">
+  <link rel="stylesheet" href="./css/ybd.css">
+  <script src="./layui.js"></script>
+  <script src="./js/ybd.js"></script>
+  <script type="text/javascript">
+	try{
+		//判断是否是手机端
+		if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			alert("由于内容较多，建议您使用PC端访问！");	
+		}else{
+			//window.location.href="cindex.html";
+		}
+		//判断是否是IE浏览器
+		if (!!window.ActiveXObject || "ActiveXObject" in window) {
+			alert("请不要使用IE浏览器或兼容模式访问！");
+			//window.location.href = 'http://zs.xzsyzjc.cn'
+			document.write("<h1>请不要使用“IE浏览器”或“兼容模式”访问！</h1>");
+			document.execCommand("Stop")
+		}
+		if (navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == "micromessenger"){
+			alert("请不要使用微信浏览器访问！");
+			window.location.href = 'wx.html'
+			document.execCommand("Stop")
+		}
+	}catch(e){}
+   </script>
+</head>
+<body>
+ <!-- 你的HTML代码 -->
+ <img style="position: fixed; bottom: -320px; left: -200px; opacity: 0.1; z-index: -100;height: 100%;" alt="" src="http://file.xzsyzjc.cn/photos/public/School_Badge_Black.png">
+ <div class="ybd-index">
+	<fieldset class="layui-elem-field layui-field-title" style="margin: 50px auto;">
+  		<legend style="font-size: 35px;text-align: center;">忻州师范学院2018级新生预报到</legend>
+	</fieldset>
+	<div class="ybd-container">
+		<div class="layui-progress" lay-showpercent="true" lay-filter="progress">
+        	<div class="layui-progress-bar layui-bg-blue" lay-percent="" style="width: 0%;"><span class="layui-progress-text"></span></div>
+    	</div>
+		<div class="ybd-card" id="Step1-form" style="display: none;">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step1&nbsp;</i>基本信息
+			</h2>
+			<div class="ybd-card-tips"><i class="layui-icon layui-icon-tips"> </i><xm style="color:  black;"></xm>&nbsp;同学你好：<br>&emsp;&emsp;请认真并如实地填写以下内容，你所填写的内容将用于建立电子档案。预计填写用时：5~10分钟。</div>
+			<form class="layui-form layui-form-pane ybd-form" action="" lay-filter="ybd-form-jbxx">
+				<div class="cut"><b></b><span>个人及家庭信息</span><b></b></div>
+				<div class="layui-form-item"  style="margin-top: -45px;">
+				    <div class="layui-inline">
+				      <label class="layui-form-label">身高(CM)</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="sg" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">体重(KG)</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="tz" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">QQ号码</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="qq" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+			    </div>
+			    <div class="layui-form-item">
+			    	<div class="layui-inline">
+				       	<label class="layui-form-label">健康状况</label>
+				       	<div class="layui-input-inline">
+						    <select name="jkzk" lay-verify="required">
+						    	<option value=""></option>
+						        <option value="健康">健康</option>
+						        <option value="亚健康">亚健康</option>
+						        <option value="疾病">疾病</option>
+						    </select>
+			    		</div>
+		    		</div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">本人电话</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="brdh" lay-verify="required|phone" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">电子邮箱</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="email" lay-verify="required|email" autocomplete="off" class="layui-input" placeholder="example@domain.com">
+				      </div>
+				    </div>
+			    </div>
+			    <div class="layui-form-item">
+				    <div class="layui-inline">
+				      <label class="layui-form-label">毕业院校</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="byyx" lay-verify="required" autocomplete="off" class="layui-input" placeholder="请填写最高学历毕业院校">
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				       	<label class="layui-form-label">入学前户口</label>
+				       	<div class="layui-input-inline">
+						    <select name="hklx" lay-verify="required">
+						    	<option value=""></option>
+						        <option value="城镇户口">城镇户口</option>
+						        <option value="农村户口">农村户口</option>
+						    </select>
+			    		</div>
+		    		</div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">家庭人口数</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="jtrks" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+			    </div>
+			    <div class="layui-form-item">
+				    <div class="layui-inline">
+				       	<label class="layui-form-label">生源所在地</label>
+				       	<div class="layui-input-inline">
+						    <select name="syszd" id="Address1" lay-verify="required" lay-search="">
+						    	<option value="">直接选择或搜索选择</option>
+						    </select>
+			    		</div>
+		    		</div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">家庭电话</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="jtdh" lay-verify="required|phone" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">家庭邮编</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="jtyb" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+			    </div>
+			    <div class="layui-form-item">
+				    <div class="layui-inline">
+				      <label class="layui-form-label">收入来源</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="srly" lay-verify="required" autocomplete="off" class="layui-input" placeholder="请填写">
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">家庭月收入</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="ysr" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				      <label class="layui-form-label">人均月收入</label>
+				      <div class="layui-input-inline">
+				        <input type="text" name="rjysr" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请填写数字">
+				      </div>
+				    </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block" pane style="width: 950px; margin-left: 15px;">
+				      <label class="layui-form-label">家庭类型</label>
+				      <div class="layui-input-block">
+				        <input type="checkbox" name="jtlx[]" value="孤儿" title="孤儿">
+						<input type="checkbox" name="jtlx[]" value="单亲" title="单亲">
+						<input type="checkbox" name="jtlx[]" value="残疾" title="残疾">
+						<input type="checkbox" name="jtlx[]" value="烈士或优抚对象子女" title="烈士或优抚对象子女">
+						<input type="checkbox" name="jtlx[]" value="低保家庭" title="低保家庭">
+						<input type="checkbox" name="jtlx[]" value="建档立卡贫困户" title="建档立卡贫困户">
+						<input type="checkbox" name="jtlx[]" value="其他" title="其他">
+				      </div>
+			    </div>
+			    <div class="layui-form-item">
+				    <div class="layui-inline">
+				      <label class="layui-form-label ybd-form-item-block-label">家庭地址</label>
+				      <div class="layui-input-inline">
+				      	<select name="jtdz1" id="Address2" lay-verify="required" lay-search="">
+						    <option value="">直接选择或搜索选择</option>
+						</select>
+				      </div>
+				    </div>
+				    <div class="layui-inline">
+				      <input type="text" name="jtdz2" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" style="width: 570px !important;display: inline-block;margin-left: -24px;margin-right: 10px;" placeholder="详细地址">
+				    </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label">家庭遭受突发意外事件</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="jtywsj" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input " placeholder="无此类情况请填“无”">
+				      </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label">家庭成员失业情况</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="jtcysyqk" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" placeholder="无此类情况请填“无”">
+				      </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label">家庭欠债情况及原因</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="jtqzqk" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" placeholder="无此类情况请填“无”">
+				      </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label">家庭其他情况</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="qtqk" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" placeholder="无此类情况请填“无”">
+				      </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label">学生特长</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="tc" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" placeholder="请详细填写">
+				      </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label">学生兴趣爱好</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="xqah" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" placeholder="请详细填写">
+				      </div>
+			    </div><!--
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label">学生社会实践</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="shsj" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" placeholder="没有对应字段、年收入字段使用月收入*12计算">
+				      </div>
+			    </div>
+			    <div class="layui-form-item ybd-form-item-block">
+				      <label class="layui-form-label ybd-form-item-block-label ybd-form-item-block-label">学生奖惩情况</label>
+				      <div class="layui-input-block">
+				        <input type="text" name="jcqk" lay-verify="required" autocomplete="off" class="layui-input ybd-form-item-block-input" placeholder="没有对应字段">
+				      </div>
+			    </div>-->
+			    <div class="layui-form-item layui-form-text ybd-form-item-block">
+				    <label class="layui-form-label">职业规划</label>
+				    <div class="layui-input-block">
+				    	<textarea name="zygh" placeholder="请填写在校期间的学习和生活规划等。" lay-verify="required|grxx_zygh" class="layui-textarea"></textarea>
+				    </div>
+				</div>
+			    <div class="layui-inline">
+				      <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="grxx"><i class="layui-icon layui-icon-tabs">&nbsp;</i>保存 个人及家庭信息</button>
+				</div>
+			</form>
+			<form class="layui-form layui-form-pane ybd-form" action="" lay-filter="ybd-form-jtcy">
+			    <div class="cut"><b></b><span>家庭主要成员情况</span><b></b></div>
+			    <div class="ybd-table" style="margin-top: -45px;">
+			    	<table class="layui-hide" id="jtcy"></table>
+					<script type="text/html" id="jtcyTpl">
+					  <a class="layui-btn layui-btn-danger layui-btn-xs" id="Del_jtcy" value="{{d.id}}">删除</a>
+					</script>
+			    </div>
+			    <div id="jtcy_form" style="display:none;">
+			    	<div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">姓名</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="xm" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">年龄</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="nl" lay-verify="required|number" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					       	<label class="layui-form-label">称呼</label>
+					       	<div class="layui-input-inline">
+							    <select name="ch" lay-verify="required">
+							    	<option value=""></option>
+							    	<option value="其他">其他</option>
+							        <option value="父亲">父亲</option>
+							        <option value="母亲">母亲</option>
+							        <option value="哥哥">哥哥</option>
+							        <option value="姐姐">姐姐</option>
+							        <option value="妹妹">妹妹</option>
+							        <option value="弟弟">弟弟 </option>
+							    </select>
+				    		</div>
+		    			</div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					       	<label class="layui-form-label">健康状况</label>
+					       	<div class="layui-input-inline">
+							    <select name="jkzk" lay-verify="required">
+							    	<option value=""></option>
+							        <option value="健康">健康</option>
+							        <option value="亚健康">亚健康</option>
+							        <option value="疾病">疾病</option>
+							    </select>
+				    		</div>
+		    			</div>
+		    			<div class="layui-inline">
+					       	<label class="layui-form-label">文化程度</label>
+					       	<div class="layui-input-inline">
+							    <select name="whcd" lay-verify="required">
+							    	<option value=""></option>
+							        <option value="其他">其他</option>
+							        <option value="小学">小学</option>
+							        <option value="初中">初中</option>
+							        <option value="高中">高中</option>
+							        <option value="专科">专科</option>
+							        <option value="本科">本科</option>
+							        <option value="硕士">硕士</option>
+							        <option value="博士">博士</option>
+							    </select>
+				    		</div>
+		    			</div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">工作单位</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="gzdw" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">职业</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="zy" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">职务</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="zw" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">年收入</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="nsr" lay-verify="required|number" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">联系电话</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="lxdh" lay-verify="required|phone" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">备注</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="bz" autocomplete="off" class="layui-input" placeholder="选填">
+					      </div>
+					    </div>
+					    <div class="layui-inline ybd-form-btn1">
+					      <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="add_jtcy"><i class="layui-icon layui-icon-tabs">&nbsp;</i>保存本项</button>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="layui-inline ybd-form-btn2">
+				      <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit="" id="add_jtcy_form"><i class="layui-icon layui-icon-add-1">&nbsp;</i>增加一项</button>
+				</div>
+			</form>
+			<form class="layui-form layui-form-pane ybd-form" action="" lay-filter="ybd-form-xxjl">
+			    <div class="cut"><b></b><span>学生学习简历</span><b></b></div>
+			    <div class="ybd-table" style="margin-top: -45px;">
+			    	<table class="layui-hide" id="xxjl"></table>
+					<script type="text/html" id="xxjlTpl">
+					  <a class="layui-btn layui-btn-danger layui-btn-xs" id="Del_xxjl" value="{{d.id}}">删除</a>
+					</script>
+			    </div>
+			    <div id="xxjl_form" style="display:none;">
+			    	<div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">自何年何月</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="qsrq" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">至何年何月</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="jzrq" id="date2" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">毕业学校</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="byxx" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">担任职务</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="drzw" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">证明人</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="zmr" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline ybd-form-btn1">
+					      <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="add_xxjl"><i class="layui-icon layui-icon-tabs">&nbsp;</i>保存本项</button>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="layui-inline ybd-form-btn2">
+				      <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit="" id="add_xxjl_form"><i class="layui-icon layui-icon-add-1">&nbsp;</i>增加一项</button>
+				</div>
+		    </form>
+		    <form class="layui-form layui-form-pane ybd-form" action="" lay-filter="ybd-form-shsj">
+			    <div class="cut"><b></b><span>学生社会实践</span><b></b></div>
+			    <div class="ybd-table" style="margin-top: -45px;">
+			    	<table class="layui-hide" id="shsj"></table>
+					<script type="text/html" id="shsjTpl">
+					  <a class="layui-btn layui-btn-danger layui-btn-xs" id="Del_shsj" value="{{d.id}}">删除</a>
+					</script>
+			    </div>
+			    <div id="shsj_form" style="display:none;position: relative;">
+			    	<div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">活动名称</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="hdmc" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">担任角色</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="drjs" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline" style="visibility:hidden;">
+					      <label class="layui-form-label">占位框[证明材料]</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="zmcl" lay-verify="shzj_zmcl" id="shzj_zmcl" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">起始日期</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="qsrq" id="date3" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">结束日期</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="jzrq" id="date4" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label" style="visibility:hidden;">占位框</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">组织单位</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="zzdw" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">备注</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="bz" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline ybd-form-btn1">
+					      <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="add_shsj"><i class="layui-icon layui-icon-tabs">&nbsp;</i>保存本项</button>
+					    </div>
+				    </div>
+				    <div class="layui-upload-drag ybd-upload-img" id="shsj_upload_image">
+				    	<img class="ybd-upload-image" style="display:  none;">
+				    	<ybd-upload-img>点击上传证明材料（20KB~2MB）<br>或将图片拖拽到此处</ybd-upload-img>
+				    </div>
+			    </div>
+			    <div class="layui-inline ybd-form-btn2">
+				      <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit="" id="add_shsj_form"><i class="layui-icon layui-icon-add-1">&nbsp;</i>增加一项</button>
+				</div>
+		    </form>
+		    <form class="layui-form layui-form-pane ybd-form" action="" lay-filter="ybd-form-hjqk">
+			    <div class="cut"><b></b><span>学生获奖情况</span><b></b></div>
+			    <div class="ybd-table" style="margin-top: -45px;">
+			    	<table class="layui-hide" id="hjqk"></table>
+					<script type="text/html" id="hjqkTpl">
+					  <a class="layui-btn layui-btn-danger layui-btn-xs" id="Del_hjqk" value="{{d.id}}">删除</a>
+					</script>
+			    </div>
+			    <div id="hjqk_form" style="display:none;position: relative;">
+			    	<div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">奖项名称</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="jxmc" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">奖项级别</label>
+					      	<div class="layui-input-inline">
+							    <select name="jxjb" lay-verify="required">
+							    	<option value=""></option>
+							        <option value="其他">其他</option>
+							        <option value="省级">省级</option>
+							        <option value="国家级">国家级</option>
+							    </select>
+				    		</div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label" style="visibility:hidden;">占位框[证明材料]</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="zmcl" lay-verify="hjqk_zmcl" id="hjqk_zmcl" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">获奖时间</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="hjsj" id="date5" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">组织单位</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="zzdw" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label" style="visibility:hidden;">占位框</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+				    </div>
+				    <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">获奖等级</label>
+					      <div class="layui-input-inline">
+							    <select name="hjdj" lay-verify="required">
+							    	<option value=""></option>
+							        <option value="其他">其他</option>
+							        <option value="三等奖">三等奖</option>
+							        <option value="二等奖">二等奖</option>
+							        <option value="一等奖">一等奖</option>
+							    </select>
+				    		</div>
+					    </div>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">备注</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="bz" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					    <div class="layui-inline ybd-form-btn1">
+					      <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="add_hjqk"><i class="layui-icon layui-icon-tabs">&nbsp;</i>保存本项</button>
+					    </div>
+				    </div>
+				    <div class="layui-upload-drag ybd-upload-img" id="hjqk_upload_image">
+				    	<img class="ybd-upload-image" style="display:  none;">
+				    	<ybd-upload-img>点击上传证明材料（20KB~2MB）<br>或将图片拖拽到此处</ybd-upload-img>
+				    </div>
+			    </div>
+			    <div class="layui-inline ybd-form-btn2">
+				      <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit="" id="add_hjqk_form"><i class="layui-icon layui-icon-add-1">&nbsp;</i>增加一项</button>
+				</div>
+		    </form>
+		    <button class="layui-btn layui-btn-radius" style="margin-left: 85%;margin-bottom: 15px;margin-top: 20px;" id="Finish_Step1"><i class="layui-icon layui-icon-ok">&nbsp;</i>完成填写</button>
+	    </div>
+		<div class="ybd-card" id="Step1-finish" style="display: none;">
+			<div class="ybd-card-finish">
+				<i class="layui-icon layui-icon-ok ybd-card-finish-icon"></i>
+				&nbsp;&nbsp;您已完成&nbsp;<str>基本信息</str>
+				<a class="ybd-card-finish-rewirte" id="Rewirt_Step1">重新填写</a>
+			</div>
+		</div>
+		<div class="ybd-card" id="Step2-form" style="display: none;">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step2&nbsp;</i>家长寄语
+			</h2>
+			<div class="ybd-card-tips"><i class="layui-icon layui-icon-tips"> </i>尊敬的家长：<br>&emsp;&emsp;马上就要开学了，孩子离家在即，所有的嘱咐与不舍，就用这样的方式让我们转达给您的孩子吧！</div>
+			<button class="layui-btn layui-btn-lg ybd-card-btn" id="Show_Step2_Frame"><i class="layui-icon layui-icon-release">&nbsp;</i>去填写&nbsp;家长寄语</button>
+		</div>
+		<div class="ybd-card" id="Step2-finish" style="display: none;">
+			<div class="ybd-card-finish">
+				<i class="layui-icon layui-icon-ok ybd-card-finish-icon"></i>
+				&nbsp;&nbsp;您已完成&nbsp;<str>家长寄语</str>
+				<a class="ybd-card-finish-rewirte" id="Rewirt_Step2">重新填写</a>
+			</div>
+		</div>
+		<!--
+		<div class="ybd-card" style="display: none;">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step3&nbsp;</i>校园一卡通
+			</h2>
+			<div class="ybd-card-tips ybd-dark"><i class="layui-icon layui-icon-tips"> </i>一些提示</div>
+			<div class="ybd-card-ykt">
+				<table class="ybd-card-ykt-table">
+				    <tbody>
+					    <tr class="ybd-card-ykt-table-header">
+							<th rowspan="2">套餐名称</th>
+						    <th rowspan="2">月费</th>
+							<th colspan="6">套餐资费</th>
+					    </tr>
+					    <tr class="ybd-card-ykt-table-header">
+							<th>国内流量</th>
+							<th>国内拨打</th>
+							<th>国内短 / 彩信</th>
+							<th>国内接听</th>
+							<th>来电显示</th>
+					    </tr>
+					    <tr>
+							<td>1元<br>日租卡</td>
+							<td>5元</td>
+							<td>1元 / 天<br>800M</td>
+							<td rowspan="2">0.1元 / 分钟</td>
+							<td rowspan="2">0.1元 / 条</td>
+							<td rowspan="2">免费</td>
+							<td rowspan="2">免费</td>
+					    </tr>
+					    <tr>
+							<td>不限量<br>日租卡</td>
+							<td>5元</td>
+							<td>3元 / 天<br> 不限量</td>
+					    </tr>
+					</tbody>
+				</table>
+				<p class="ybd-card-ytk-xztc">
+					<button class="layui-btn layui-btn-lg">选择&nbsp;套餐一</button>
+					<button class="layui-btn layui-btn-lg">选择&nbsp;套餐二</button>
+				</p>
+				<p class="ybd-card-ytk-skip"><a href="#"><i class="layui-icon layui-icon-next" style="font-size: 12px;"> </i>跳过&nbsp;校园一卡通</a></p>
+			</div>
+		</div>
+		<div class="ybd-card" style="display: none;">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step3&nbsp;</i>校园一卡通 (选号)
+			</h2>
+			<div class="ybd-card-tips ybd-dark"><i class="layui-icon layui-icon-tips"> </i>一些提示(点击号码后弹出Tips确认)</div>
+			<div class="ybd-card-ykt-number_list">
+				<div class="ybd-card-ykt-number"><i class="layui-icon layui-icon-cellphone">&nbsp;</i>188 6666 8888</div>
+				<div class="ybd-card-ykt-number"><i class="layui-icon layui-icon-cellphone">&nbsp;</i>188 6666 8888</div>
+				<div class="ybd-card-ykt-number"><i class="layui-icon layui-icon-cellphone">&nbsp;</i>188 6666 8888</div>
+				<div class="ybd-card-ykt-number"><i class="layui-icon layui-icon-cellphone">&nbsp;</i>188 6666 8888</div>
+				<div class="ybd-card-ykt-number"><i class="layui-icon layui-icon-cellphone">&nbsp;</i>188 6666 8888</div>
+				<div class="ybd-card-ykt-number"><i class="layui-icon layui-icon-cellphone">&nbsp;</i>188 6666 8888</div>
+				<div class="ybd-card-ykt-number"><i class="layui-icon layui-icon-cellphone">&nbsp;</i>188 6666 8888</div>
+				<p class="ybd-card-ytk-skip"><a href="#"><i class="layui-icon layui-icon-refresh" style="font-size: 12px;"> </i>换一批</a></p>
+			</div>
+		</div>
+		-->
+		<div class="ybd-card" id="Step3-form" style="display: none;">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step3&nbsp;</i>校园一卡通（中国电信NFC-UIM校园卡）
+			</h2>
+			<div class="ybd-card-tips ybd-dark"><i class="layui-icon layui-icon-tips"> </i>校园一卡通是我院学生日常必备，电信公司作为我院独家合作伙伴，全面开通一卡通线上充值业务，广大师生可通过中国电信翼支付客户端进行线上充值，新生开学当天可领取高额饭费补贴，同时为方便全国各地师生出行方便，推出全国公交一卡通及高额补贴，全面降低师范类学生各项生活支出！
+</div>
+			<button class="layui-btn layui-btn-lg ybd-card-btn" id="Show_Step3_Frame"><i class="layui-icon layui-icon-release">&nbsp;</i>去填写&nbsp;中国电信校园卡（校园一卡通）</button>
+		</div>
+		<div class="ybd-card" id="Step3-finish" style="display: none;">
+			<div class="ybd-card-finish">
+				<i class="layui-icon layui-icon-ok ybd-card-finish-icon"></i>
+				&nbsp;&nbsp;您已完成&nbsp;<str>校园一卡通</str>
+				<a class="ybd-card-finish-rewirte" id="Rewirt_Step3">重新填写</a>
+			</div>
+		</div>
+		<div class="ybd-card" id="Step4-form" style="display: none;">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step4&nbsp;</i>专业满意度调查问卷
+			</h2>
+			<div class="ybd-card-tips"><i class="layui-icon layui-icon-tips"> </i>亲爱的同学：<br>&emsp;&emsp;为了了解同学们对所学专业的满意度，为学院改进课程设置提供依据，我们组织了此次问卷调查。本次调查采用无记名方式，希望您能依据自己的感受如实、客观地完成此份问卷。非常感谢您的支持和配合！</div>
+			<button class="layui-btn layui-btn-lg ybd-card-btn" id="Show_Step4_Frame"><i class="layui-icon layui-icon-release">&nbsp;</i>去填写&nbsp;专业满意度调查问卷</button>
+		</div>
+		<div class="ybd-card" id="Step4-finish" style="display: none;">
+			<div class="ybd-card-finish">
+				<i class="layui-icon layui-icon-ok ybd-card-finish-icon"></i>
+				&nbsp;&nbsp;您已完成&nbsp;<str>专业满意度调查问卷</str>
+				<a class="ybd-card-finish-rewirte" id="Rewirt_Step4">重新填写</a>
+			</div>
+		</div>
+		<div class="ybd-card" id="Step5-form" style="display: none;">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step5&nbsp;</i>完成预报到
+			</h2>
+			<div style="margin: auto 20px;">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+				  <legend><xm style="color:  black;"></xm>&nbsp;同学，以下是您的报到信息：</legend>
+				</fieldset>
+				<div class="layui-form">
+				  <table class="layui-table">
+				    <colgroup>
+				      <col width="150">
+				      <col width="150">
+				      <col width="200">
+				      <col>
+				    </colgroup>
+				    <thead>
+				      <tr>
+				      	<th>校区</th>
+				        <th>学号</th>
+				        <th>行政班</th>
+				        <th>班级简称</th>
+				        <th>辅导员</th>
+				        <th>辅导员联系电话</th>
+				      </tr> 
+				    </thead>
+				    <tbody>
+				      
+				    </tbody>
+				  </table>
+				</div>
+				<div style="text-align: center;font-size: 22px;line-height: 55px;color: red;">您已完成预报到，请持《录取通知书》、准考证、身份证等材料按时来校报道。</div>
+			</div>
+		</div>
+		<div class="ybd-card" id="Step1">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step1&nbsp;</i>基本信息
+			</h2>
+		</div>
+		<div class="ybd-card" id="Step2">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step2&nbsp;</i>
+				家长寄语
+			</h2>
+		</div>
+		<div class="ybd-card" id="Step3">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step3&nbsp;</i>校园一卡通
+			</h2>
+		</div>
+		<div class="ybd-card" id="Step4">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step4&nbsp;</i>专业满意度调查问卷
+			</h2>
+		</div>
+		<div class="ybd-card" id="Step5">
+			<h2 class="ybd-card-title">
+				<i class="layui-icon layui-icon-form ybd-card-title-icon">&nbsp;Step5&nbsp;</i>完成预报到
+			</h2>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-zsxs">
+			<image src="http://file.xzsyzjc.cn/Photos/logo/zsxs-icon-gl.png"></image>
+			<p>掌上忻师</p>
+		</div>
+		<div class="footer-other">招生就业指导处 · 大学生就业创业小组</div>
+		<div class="footer-other">Copyright © 2016-2018 <a href="http://www.rebeta.cn">Rebeta.cn</a> All Rights Reserved.</div>
+	</div>
+ </div>
+ <script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+</body>
+</html>

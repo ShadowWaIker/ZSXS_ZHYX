@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>忻州师范学院2018级新生预报到</title>
+</head>
+<body>
+<script type="text/javascript">
+	try{
+		//判断是否是手机端
+		if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			alert("由于内容较多，建议您使用PC端填写！");		
+		}else{
+			//window.location.href="cindex.html";
+		}
+		//判断是否是IE浏览器
+		if (!!window.ActiveXObject || "ActiveXObject" in window) {
+			alert("请不要使用IE浏览器或兼容模式打开！");
+			window.location.href = 'http://zs.xzsyzjc.cn'
+			document.execCommand("Stop")
+		}
+		if (navigator.userAgent.toLowerCase().match(/MicroMessenger/i) != "micromessenger"){
+			window.location.href = 'http://yx.xzsyzjc.cn'
+			document.execCommand("Stop")
+		}
+	}catch(e){}
+</script>
+<div>请点击右上角“更多”，选择“在浏览器中打开”。</div>
+</body>
+</html>
