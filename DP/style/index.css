@@ -1,0 +1,285 @@
+body{
+  margin: 0px;
+}
+
+.container{
+	height: 1540px;
+	width: 1540px;
+    background-color: #00192e;
+    position: relative;
+}
+
+.title_level_1{
+    height: 65px;
+    font-size: 45px;
+    color: #ff0000;
+    text-align: center;
+    border-bottom: 2px solid #00aeff;
+}
+
+.title_level_2{
+    height: 55px;
+    font-size: 30px;
+	line-height: 50px;
+    color: #a9e2fd;
+    text-align: center;
+    border-bottom: 1px solid #a9e2fd9e;
+    margin-bottom: 10px;
+}
+
+.background_title{
+	position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 290px;
+}
+
+.background_images{
+	position: absolute;
+    left: 0px;
+    top: 420px;
+}
+
+.clock{
+	position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 28px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.num_container{
+    width: 600px;
+    height: 410px;
+    top: 90px;
+    left: 490px;
+}
+
+.num_1{
+	position: absolute;
+  top: 55px;
+  width: 350px;
+  height: 350px;
+}
+
+percent{
+	margin-left: 50px;
+}
+
+.num_2{
+    position: absolute;
+    right: 30px;
+    top: 115px;
+    color: #ff0000;
+    font-size: 35px;
+}
+
+num{
+	font-size: 85px;
+	line-height: 65px;
+	font-weight:bold;
+}
+
+.num_3{
+	position: absolute;
+    left: 275px;
+    top: 315px;
+    color: white;
+    font-size: 40px;
+}
+
+.num_3 img {
+	height: 35px;
+	margin-left: 20px;
+}
+
+.num_4{
+    position: absolute;
+    right: 30px;
+    top: 210px;
+    color: #ff0000;
+    font-size: 35px;
+}
+
+num1{
+	font-size: 70px;
+	line-height: 65px;
+}
+
+.department{
+    top: 90px;
+    left: 35px;
+    width: 435px;
+    height: 1365px;
+}
+
+.new_student{
+    top: 90px;
+    left: 1110px;
+    width: 380px;
+    height: 320px;
+}
+
+.new_student_content{
+    color: white;
+    left: 15px;
+    position: absolute;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.birthday{
+	top: 430px;
+    left: 1110px;
+    width: 380px;
+    height: 70px;
+}
+
+.map{
+    top: 522px;
+    left: 490px;
+    width: 1005px;
+    height: 646px;
+}
+
+.map_image{
+  width: 100%;
+  position: absolute;
+}
+
+.chart{
+    width: 1005px;
+    height: 265px;
+    left: 490px;
+    top: 1190px;
+	position: absolute;
+}
+
+.progress{
+	margin: 0px auto;
+  width: 95%;
+  color: white;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.progress_content_proportion{
+  display: inline-block;
+  float: right;
+}
+
+.border{
+	background-color: rgba(66, 66, 66, 0.5);
+	/*border:1px solid #a9e2fd;*/
+	position:absolute;
+}
+
+.top-left{
+  width:20px;
+  height:20px;
+  border-left:1px solid #a9e2fd;
+  border-top:1px solid #a9e2fd;
+  position:absolute;
+  left:-2px;
+  top:-2px;
+}
+
+.top-right{
+  width:20px;
+  height:20px;
+  border-right:1px solid #a9e2fd;
+  border-top:1px solid #a9e2fd;
+  position:absolute;
+  right:-2px;
+  top:-2px;
+}
+.bottom-left{
+  width:20px;
+  height:20px;
+  border-left:1px solid #a9e2fd;
+  border-bottom:1px solid #a9e2fd;
+  position:absolute;
+  left:-2px;
+  bottom:-2px;
+}
+.bottom-right{
+  width:20px;
+  height:20px;
+  border-right:1px solid #a9e2fd;
+  border-bottom:1px solid #a9e2fd;
+  position:absolute;
+  right:-2px;
+  bottom:-2px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 9pt;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+.gl{
+  color: #c2c2c2;
+}
+
+.footer-zsxs{
+    font-size: 20pt;
+    height: 15pt;
+    line-height: 15pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-top: -10px;
+	margin-bottom: 15px;
+}
+.footer-zsxs img {
+    width: 20pt;
+    height: 20pt;
+    margin-right: 5px;
+}
+.footer-other{
+    font-size: 10pt;
+    line-height: 15pt;
+}
+
+
+@keyframes rowup {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -307px, 0);
+        transform: translate3d(0, -307px, 0);
+    }
+}
+.list{
+    border: 1px solid #999;
+    position: relative;
+    height: 68px;
+    overflow: hidden;
+	color: white;
+	text-align: center;
+    font-size: 25px;
+	line-height: 40px;
+	color: yellow;
+}
+
+.list img{
+	width: 35px;
+	margin-bottom: -7px;
+}
+
+.list .rowup{
+    -webkit-animation: 30s rowup linear infinite normal;
+    animation: 30s rowup linear infinite normal;
+    position: relative;
+}
